@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="myoffer_cricket" class="org.example.demo1.BestOffer">
+
+    </bean>
+    <bean id="cricket" class="org.example.demo1.Cricket">
+        <constructor-arg ref="myoffer_cricket"></constructor-arg>
+
+</bean>
+    <bean id="myoffer_football" class="org.example.demo1.BestOffer">
+
+    </bean>
+<bean id="football" class="org.example.demo1.FootBall">
+<constructor-arg ref="myoffer_football"></constructor-arg>
+</bean>
+</beans>
